@@ -1,5 +1,35 @@
+# Tender-Management-System
+
 Domain Description:
 Whenever a company  requires a service / merchandise , a tender is floated. Company maintains an empaneled list of Vendors. An empaneled vendor can only bid for a tender. Every vendor can bid only once against   each tender. Against each tender there may be   bids from several vendors. The company will then select the most suitable bid and places the order to that vendor.
+
+------------------------------------------------------
+Project Type : 
+------------------------------------------------------
+|> Console Based Individual Project <|
+
+
+Topics for the Application:
+-----------------------------------------------------
+● Core Java
+● SQL
+● JDBC
+
+Attention areas:
+------------------------------------------------------
+Core Java: 
+● Basic Oops concept
+● Exception handling
+● Collection framework
+
+SQL: 
+● Basic SQL
+● Table relationships
+● Joins
+● Subqueries
+
+JDBC with DAO pattern
+
 
 There are 2 users in the system:
 1. Administrator 
