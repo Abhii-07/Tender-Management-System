@@ -9,4 +9,6 @@ public class VendorBean extends UserBean{
 	public VendorBean(String username, String password) {
 		super(username, password);
 	}
+	
+	
 }
