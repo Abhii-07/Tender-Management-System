@@ -1,0 +1,57 @@
++-----------------------+
+| DATABASE NAME : TMSDB |
++-----------------------+
+
++-----------------+
+| Tables_in_tmsdb |
++-----------------+
+| admin           |
+| bidder          |
+| tender          |
+| vendor          |
++-----------------+
+
+TABLE ADMIN;
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| name    | varchar(50)  | YES  |     | NULL    |       |
+| email   | varchar(50)  | YES  |     | NULL    |       |
+| address | varchar(100) | YES  |     | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+
+
+TABLE TENDER;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| tid       | varchar(255) | NO   | PRI | NULL    |       |
+| tname     | varchar(255) | YES  |     | NULL    |       |
+| ttype     | varchar(255) | YES  |     | NULL    |       |
+| tprice    | int          | YES  |     | NULL    |       |
+| tlocation | varchar(255) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+
+TABLE VENDOR;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| vid       | varchar(50)  | NO   | PRI | NULL    |       |
+| vpassword | varchar(50)  | YES  |     | NULL    |       |
+| vname     | varchar(50)  | YES  |     | NULL    |       |
+| vemail    | varchar(50)  | YES  |     | NULL    |       |
+| vaddress  | varchar(100) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+
+
+TABLE BIDDER;
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| bno     | varchar(255) | NO   | PRI | NULL    |       |
+| vid     | varchar(255) | YES  |     | NULL    |       |
+| tid     | varchar(255) | YES  |     | NULL    |       |
+| bprice  | int          | YES  |     | NULL    |       |
+| bstatus | varchar(255) | YES  |     | NULL    |       |
++---------+--------------+------+-----+---------+-------+
