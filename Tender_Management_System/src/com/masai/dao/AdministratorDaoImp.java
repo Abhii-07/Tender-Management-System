@@ -42,7 +42,7 @@ public class AdministratorDaoImp implements AdministratorDao{
 				result = new AdministratorBean(n,e,a);
 				
 			}else {
-				throw new AdministratorException("Invalid Admin !");
+				throw new AdministratorException("Invalid Admin!");
 			}
 			
 			

@@ -77,11 +77,8 @@ public class TenderBean {
 
 
 	@Override
-	public String toString() {
-		return "TenderBean [id=" + id + ", name=" + name + ", type=" + type + ", price=" + price + ", location="
-				+ location + ", getId()=" + getId() + ", getName()=" + getName() + ", getType()=" + getType()
-				+ ", getPrice()=" + getPrice() + ", getLocation()=" + getLocation() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	public String toString() {		
+		return "| " + id + " | " + name + " | " + type + " | "+ price + " | " + location;
 	}
 
 

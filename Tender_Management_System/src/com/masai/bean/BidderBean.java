@@ -50,13 +50,12 @@ public class BidderBean {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	
 	@Override
-	public String toString() {
-		return "BidderBean [id=" + id + ", vid=" + vid + ", tid=" + tid + ", price=" + price + ", status=" + status
-				+ ", getId()=" + getId() + ", getVid()=" + getVid() + ", getTid()=" + getTid() + ", getPrice()="
-				+ getPrice() + ", getStatus()=" + getStatus() + ", getClass()=" + getClass() + ", hashCode()="
-				+ hashCode() + ", toString()=" + super.toString() + "]";
+	public String toString() {		
+		return "| " + id + " | " + vid + " | " + tid + " | "+ price + " | " + status;
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id, price, status, tid, vid);
