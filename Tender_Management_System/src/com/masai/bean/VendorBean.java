@@ -51,12 +51,11 @@ public class VendorBean {
 		this.address = address;
 	}
 	@Override
-	public String toString() {
-		return "VendorBean [id=" + id + ", password=" + password + ", name=" + name + ", email=" + email + ", address="
-				+ address + ", getId()=" + getId() + ", getPassword()=" + getPassword() + ", getName()=" + getName()
-				+ ", getEmail()=" + getEmail() + ", getAddress()=" + getAddress() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	public String toString() {		
+		return " | " + id + " | " + name + " | " + email + " | "+ address ;
 	}
+	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(address, email, id, name, password);
