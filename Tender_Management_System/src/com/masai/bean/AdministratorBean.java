@@ -35,9 +35,11 @@ public class AdministratorBean {
 	}
 	@Override
 	public String toString() {
-		return "AdministratorBean [name=" + name + ", email=" + email + ", address=" + address + ", getName()="
-				+ getName() + ", getEmail()=" + getEmail() + ", getAddress()=" + getAddress() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+//		return "AdministratorBean [name=" + name + ", email=" + email + ", address=" + address + ", getName()="
+//				+ getName() + ", getEmail()=" + getEmail() + ", getAddress()=" + getAddress() + ", getClass()="
+//				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		
+		return "| " + name + " | " + email + " | " + address;
 	}
 	@Override
 	public int hashCode() {

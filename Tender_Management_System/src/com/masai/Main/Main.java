@@ -9,16 +9,16 @@ public class Main {
 	public static void administratorMain() {
 		Scanner sc = new Scanner(System.in);
 		AdministratorUsecase au = new AdministratorUsecase();
-		
+		System.out.println("--------------------------------");
 		System.out.println("1. Register a new vendor");
 		System.out.println("2. View all the vendors");
 		System.out.println("3. Create a new tender");
 		System.out.println("4. View all the tenders");
 		System.out.println("5. View all the bidds of a tender");
 		System.out.println("6. Assign tender to a vendor");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("0. Logout");
+		System.out.println(".");
+		System.out.println(".");
+		System.out.println("0. Logout and Exit from Admin Account.");
 		System.out.println("99. Exit the application");
 		int input1 = sc.nextInt();
 		switch(input1) {
@@ -124,14 +124,13 @@ public class Main {
 		VendorUsecase vu = new VendorUsecase();
 		System.out.println("===========================================================================");
 		System.out.println();
-		System.out.println("********************Welcome To Tender Management System ****************");
+		System.out.println("*********************Welcome To Tender Management System ******************");
 		System.out.println();
 		System.out.println("===========================================================================");
 		System.out.println();
 		System.out.println();
-		System.out.println("Please enter a valid input to do the following operations:-");
-		System.out.println("1. Administrator");
-		System.out.println("2. Vendor");
+
+		System.out.println("Choose User Type: \n" + "1. Admin \n" + "2. Vendor");
 		System.out.println(".");
 		System.out.println(".");
 		System.out.println("99. Exit the application");

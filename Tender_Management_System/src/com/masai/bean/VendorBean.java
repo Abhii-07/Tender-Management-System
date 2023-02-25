@@ -52,7 +52,7 @@ public class VendorBean {
 	}
 	@Override
 	public String toString() {		
-		return " | " + id + " | " + name + " | " + email + " | "+ address ;
+		return "*********************************" + "\n" + "VendorId :" + id + "\n" + "Name: " + name + "\n" + "Email: " + email + "\n" + "Address: " + address;
 	}
 	
 
