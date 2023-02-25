@@ -37,15 +37,15 @@ public class AdministratorUsecase {
 	public void RegisterVendor() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--------------------------------");
-		System.out.println("Enter a id here (format : VRXXXX):-");
+		System.out.println("Enter Id: ");
 		String id = sc.nextLine();
-		System.out.println("Enter a password here:-");
+		System.out.println("Enter Password");
 		String password = sc.nextLine();
-		System.out.println("Enter a name here:-");
+		System.out.println("Enter Name:");
 		String name = sc.nextLine();
-		System.out.println("Enter a email here:-");
-		String email = sc.next();
-		System.out.println("Enter a address here:-");
+		System.out.println("Enter Email:");
+		String email = sc.nextLine();
+		System.out.println("Enter Address:");
 		String address = sc.nextLine();
 		
 		AdministratorDao dao = new AdministratorDaoImp();
@@ -53,13 +53,12 @@ public class AdministratorUsecase {
 		try {
 			String result = dao.registerVendor(id, password, name, email, address);
 			System.out.println();
-			System.out.println();
-			System.out.println();
 			System.out.println(result);
+			System.out.println();
 		} catch (VendorException e) {
 			System.out.println();
-			System.out.println();
 			System.out.println(e.getMessage());
+			System.out.println();
 		}
 	}
 
@@ -172,6 +171,11 @@ public class AdministratorUsecase {
 		String vid = sc.nextLine();
 		System.out.println("Enter the Tender ID here (format : TRXXXX):-");
 		String tid = sc.nextLine();
+//		System.out.println("Enter the tender amount:");
+//	    int tenderAmount = sc.nextInt();
+//	    System.out.println("Enter the bidder amount:");
+//	    int bidderAmount = sc.nextInt();
+
 		
 		AdministratorDao dao = new AdministratorDaoImp();
 		

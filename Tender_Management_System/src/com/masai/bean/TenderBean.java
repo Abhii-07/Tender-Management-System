@@ -78,7 +78,9 @@ public class TenderBean {
 
 	@Override
 	public String toString() {		
-		return "| " + id + " | " + name + " | " + type + " | "+ price + " | " + location;
+//		return "| " + id + " | " + name + " | " + type + " | "+ price + " | " + location;
+		return "*********************************" + "\n" + "TenderId :" + id + "\n" + "Name: " + name + "\n" + "Type: " + type + "\n" +  "Tender Price: " + price + "\n" + "Address: " + location;
+		
 	}
 
 

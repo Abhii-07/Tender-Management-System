@@ -25,4 +25,6 @@ public interface AdministratorDao {
     public List<BidderBean> viewAllBidsOfTender(String tid) throws BidderException;
     
     public String assignTenderToVendor(String vid, String tid) throws BidderException;
+    
+//    public String assignTenderToVendor(String vid, String tid, int tprice, int bprice) throws BidderException;
 }
